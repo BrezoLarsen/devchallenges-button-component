@@ -1,1 +1,5 @@
-<p>button works!</p>
+<button [ngClass]="variant" [disabled]="disabled">
+  <span *ngIf="showIconBefore" class="material-icons">add_shopping_cart</span>
+  {{ text }}
+  <span *ngIf="showIconAfter" class="material-icons">add_shopping_cart</span>
+</button>

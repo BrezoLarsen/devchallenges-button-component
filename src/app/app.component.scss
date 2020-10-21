@@ -1,0 +1,51 @@
+.content {
+  max-width: 980px;
+  margin: 50px auto;
+}
+
+.row {
+  margin-bottom: 50px;
+}
+
+h1 {
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  line-height: 36px;
+  color: #4F4F4F;
+}
+
+p, button {
+  font-family: 'Noto Sans JP', Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #3F3F3F;
+}
+
+.resources {
+  margin: 20px 0;
+  p, a {
+    font-family: 'Ubuntu', Arial, Helvetica, sans-serif;;
+    font-size: 12px;
+    line-height: 12px;
+    color: #828282;
+  }
+}
+
+.grid {
+  display: grid;
+  &--two {
+    grid-template-columns: 1fr 1fr;
+    &-big {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  &--three {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  &--three {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  &--four {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
