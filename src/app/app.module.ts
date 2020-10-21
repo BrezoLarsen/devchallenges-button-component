@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { ButtonComponent } from './components/button/button.component';
@@ -11,12 +10,7 @@ import { ButtonComponent } from './components/button/button.component';
     ButtonComponent
   ],
   imports: [
-    BrowserModule,
-    RouterModule.forRoot([
-      { path: 'index', component: AppComponent },
-      { path: '', redirectTo: 'index', pathMatch: 'full' },
-      { path: '**', redirectTo: 'index', pathMatch: 'full' }
-    ])
+    BrowserModule
   ],
   providers: [],
   bootstrap: [AppComponent]
