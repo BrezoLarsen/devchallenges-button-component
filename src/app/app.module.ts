@@ -13,8 +13,9 @@ import { ButtonComponent } from './components/button/button.component';
   imports: [
     BrowserModule,
     RouterModule.forRoot([
-      { path: '', redirectTo: 'app', pathMatch: 'full' },
-      { path: '**', redirectTo: 'app', pathMatch: 'full' }
+      { path: 'index', component: AppComponent },
+      { path: '', redirectTo: 'index', pathMatch: 'full' },
+      { path: '**', redirectTo: 'index', pathMatch: 'full' }
     ])
   ],
   providers: [],
